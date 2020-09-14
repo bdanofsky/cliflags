@@ -11,8 +11,9 @@ class Arg(metaclass = FlagType):
         self.name = name
         if not hasattr(argv, 'type'):
             logging.error("cannot find argument type in json description")
-            sys.exit(1)
-        self.type = argv['type']
+            #sys.exit(1)
+        else:
+            self.type = argv['type']
        
         if hasattr(argv, 'description'):
             self.description = argv['description']
@@ -24,6 +25,10 @@ class Arg(metaclass = FlagType):
         else:
             self.default = None
 
+        #TODO: enable recursive flag building
+
+        '''
         for k,v in argv:
             if k not in Arg.keywords:
                 factory.Create(k,v)
+        '''

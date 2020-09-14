@@ -1,8 +1,6 @@
-import os.path
-import sys
+#!/usr/bin/env python3
+
 from flagjsonreader import FlagJsonReader
-from args import factory
-import pdb
 
 
 def main():
