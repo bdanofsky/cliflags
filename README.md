@@ -45,7 +45,7 @@ code and the object library from a production software standpoint.
 
 Note:
 I have not had time to hack on this code so it is in a bad state.
-When I get a chance to clean it up I remove this note and add
+When I get a chance to clean it up I will remove this note and add
 information on its status that reflects how usable this code is.
 
 
